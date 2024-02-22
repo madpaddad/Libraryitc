@@ -51,15 +51,17 @@
     position: relative;
     font-size: 18px;
     border-radius: 3px;
-    color: #10b5f9;
-    background-color: white;
+    color: white;
+    background-color: #19b5f9;
     padding: 12px;
     cursor: pointer;
     text-align: left;
 }
 
 .submitinfo:hover{
-    width: 140px;
+    width: 120px;
+    background-color: white;
+    color: #19b5f9;
 }
 
 .submitinfo::before{
