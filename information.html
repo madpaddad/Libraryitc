@@ -38,19 +38,19 @@
         <!-- </div> -->
 
         <!-- <div class = 'secondline'> -->
-        <div class="label-input">
-            <label for="Timein" class="lab timein"> Time In</label>
-            <input type="time" class="ip timein"> </input>
+        <div class="label-select">
+            <label for="Timein" class="lab timein"> Time In:</label>
+            <select name="timein" class = "select">
+                <optgroup label = "Morning Time"></optgroup>
+                <option value="morining1">7:00 - 9:00</option>
+                <option value="morining2">9:00 - 11:00</option>
+                <optgroup value = "Afternoon Time"> </optgroup>
+                <option value="Afternoon1">13:00 - 15:00</option>
+                <option value="Afternoon2">15:00 - 16:30</option>
+            </select>
         </div>
 
 
-        <div class="label-input">
-            <label for="Timeout" class="lab timeout"> Time Out</label>
-            <input type="time" class="ip timeout"> </input>
-        </div>
-        <!-- </div> -->
-
-        <!-- <div class = 'thirdline'> -->
         <div class="label-input">
             <label for="teammember" class="lab tmember"> Team Members</label>
             <input type="number" class="ip tmember"> </input>
@@ -59,13 +59,30 @@
             <label for="phonenumber" class="lab phonenumber"> Phone number</label>
             <input type="text" class="ip phonenumber"> </input>
         </div>
-        <!-- </div> -->
-        <!-- </div> -->
 
+        <div class = label-input>
+            <label for="reason" class = "lab reason">Usage</label>
+            <input type="text" class  = "ip input"></input>
+        </div>
+        
+        <input type="checkbox"> </input>
+        <button id="btnRule">I agree that by using the class I will follow the rules</button>
         <button class="submitinfo"> Submit </button>
-
     </div>
 
-</body>
+    <!-- Show the modal -->
+    <div id ="rule" class = "rule">
+        <p>Hello world
+            Don't go 
+            asdf
+            fas
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla officiis rerum alias architecto! Dolore sed impedit obcaecati! Deserunt natus recusandae ut corporis obcaecati enim necessitatibus eaque rerum iste! Nihil, ex.
+        </p>
+        <span id = "closerule">&times;</span>
+    </div>
+    
+    <!-- javascript info -->
+    <script src="modal.js"></script>
+    </body>
 
 </html>
