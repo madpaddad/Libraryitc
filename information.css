@@ -205,7 +205,11 @@ h2 {
 }
 
 @media screen and (max-width: 768px){
+    
     .getinfo{
-        position: fixed;
+        display: none;
+    }
+    .logo{
+        display: none;
     }
 }
