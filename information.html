@@ -13,7 +13,7 @@
         <div class="box">
             <h1>BOOKING ROOM</h1>
             <h2>INSTITUT DE TECHNOLOGIE DU CAMBODGE</h2>
-            <img class="logo" src="itc_logo(1).png" alt="">
+            <img class="logo" src="itc_logo.png" alt="">
             <div class="miniBox"></div>
             <div class="khName">វិទ្យាស្ថានបច្ចេកវិទ្យាកម្ពុជា</div>
         </div>
@@ -40,7 +40,7 @@
         <!-- <div class = 'secondline'> -->
         <div class="label-select">
             <label for="Timein" class="lab timein"> Time In:</label>
-            <select name="timein" class = "select">
+            <select name="timein" class = "select timein">
                 <optgroup label = "Morning Time"></optgroup>
                 <option value="morining1">7:00 - 9:00</option>
                 <option value="morining2">9:00 - 11:00</option>
@@ -60,6 +60,18 @@
             <input type="text" class="ip phonenumber"> </input>
         </div>
 
+        <div class="label-select">
+            <label for="selectyear" class="lab selectyear"> Academic Year</label>
+            <select name="selectyear" class = "select" aria-placeholder="Select your year">
+                <optgroup label = "Select year"></optgroup>
+                <option value="morining1">I1</option>
+                <option value="morining2">I2</option>
+                <option value="morining2">I3</option>
+                <option value="morining2">I4</option>
+                <option value="morining2">I5</option>
+            </select>
+        </div>
+
         <div class = label-input>
             <label for="reason" class = "lab reason">Usage</label>
             <input type="text" class  = "ip input"></input>
@@ -71,18 +83,29 @@
     </div>
 
     <!-- Show the modal -->
-    <div id ="rule" class = "rule">
-        <p>Hello world
+    <div id ="rule" class = "rule">            
+        <!-- header -->
+        <div id = "headerule" class = "headerrule">
+            <label for="rule">Rule</label>
+            <span id = "closerule">&times;</span>
+        </div>
+
+        <!-- rule body -->
+        <div id = "rulelist">
+            <p>Hello world
             Don't go 
             asdf
             fas
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla officiis rerum alias architecto! Dolore sed impedit obcaecati! Deserunt natus recusandae ut corporis obcaecati enim necessitatibus eaque rerum iste! Nihil, ex.
         </p>
-        <span id = "closerule">&times;</span>
+        </div>
     </div>
     
     <!-- javascript info -->
-    <script src="modal.js"></script>
+    <script src="modal.js">
+    </script>
+
     </body>
 
 </html>
+

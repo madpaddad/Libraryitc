@@ -34,19 +34,7 @@
 .select{
     font-size: 15px;
     border-radius: 5px;
-    border: solid;.rule {
-        width: 500px;
-        height: 200px;
-        display: none;
-        position: absolute; 
-        border:  .1rem solid #10b5f9;
-        background-color: white;
-        border-radius: 3px; 
-        top: 0;
-        left: 0;
-        margin: 500px;
-    
-    }
+    border: solid;
     border-color: #19b5f9;
     width: 300px;
     height: 50px;
@@ -161,9 +149,9 @@ h1 {
     left: 70%;
     top: 20%;
     flex: 1;
-  }
+}
   
-  h2 {
+h2 {
     font-size: 20px;
     font-family: "Arial";
     color: rgb(255, 255, 255);
@@ -184,16 +172,40 @@ h1 {
     top: 0;
     left: 0;
     margin: 500px;
-    box-shadow: 0px 2px 5px 5px rgba(0, 0, 0, 0.1);    
+    box-shadow: 0px 2px 5px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+.headerrule {
+    background-color: #10b5f9;  
+    padding: 10px;
+    font-size: 20px ;
+    color: white;
+    font-family: sans-serif;
+    font-weight:100;
 }
 
 #closerule{
     cursor: pointer;
     font-size: 30px;    
-    position: relative;
+    position: absolute;
     transform: translate(470px, 0px);
     top: 0;
     position: absolute;
+    color: white;
+    left: 0;
 }
 
-/* @media screen and (max-width: 768px){} */
+#rulelist{
+    position: relative;
+    padding: 30px;
+}
+
+.placeholder{
+    color: #999999;
+}
+
+@media screen and (max-width: 768px){
+    .getinfo{
+        position: fixed;
+    }
+}
